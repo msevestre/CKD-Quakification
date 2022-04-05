@@ -1023,7 +1023,12 @@
               "Unit": "kg"
             }
           },
-          "ExpressionProfiles": []
+          "ExpressionProfiles": [
+            "RenalCL1|Human|Roux",
+            "CYP3|Human|Roux",
+            "Intestine2|Human|Roux",
+            "Intestine1|Human|Roux"
+          ]
         }
       }
     },
@@ -1079,7 +1084,12 @@
               }
             ]
           },
-          "ExpressionProfiles": []
+          "ExpressionProfiles": [
+            "RenalCL1|Human|Roux",
+            "CYP3|Human|Roux",
+            "Intestine2|Human|Roux",
+            "Intestine1|Human|Roux"
+          ]
         }
       }
     }

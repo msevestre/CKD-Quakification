@@ -52,37 +52,22 @@
             },
             {
                 "Project": "Atenolol",
-                "Simulation": "Wan Healthy 50 mg IV",
+                "Simulation": "Kirch Healthy 100 mg PO",
                 "SectionId": 331
             },
             {
                 "Project": "Atenolol",
-                "Simulation": "Wan Healthy 50 mg PO",
-                "SectionId": 331
-            },
-            {
-                "Project": "Atenolol",
-                "Simulation": "Wan Healthy 100 mg PO",
-                "SectionId": 331
-            },
-            {
-                "Project": "Atenolol",
-                "Simulation": "Kirch Healthy 5 mg IV",
-                "SectionId": 331
-            },
-            {
-                "Project": "Atenolol",
-                "Simulation": "Kirch CKD3 5 mg IV",
+                "Simulation": "Kirch CKD3 100 mg PO",
                 "SectionId": 332
             },
             {
                 "Project": "Atenolol",
-                "Simulation": "Kirch CKD4 5 mg IV",
+                "Simulation": "Kirch CKD4 100 mg PO",
                 "SectionId": 332
             },
             {
                 "Project": "Atenolol",
-                "Simulation": "Kirch CKD5 5 mg IV",
+                "Simulation": "Kirch CKD5 100 mg PO",
                 "SectionId": 332
             },
             {

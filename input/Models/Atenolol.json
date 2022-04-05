@@ -359,6 +359,13 @@
           "Value": 1.0
         },
         {
+          "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|Intestine1|Fraction expressed apical",
+          "Value": 0.0,
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Intracellular|Intestine1|Relative expression",
           "Value": 1.0
         },
@@ -892,28 +899,6 @@
   ],
   "Individuals": [
     {
-      "Name": "Kirch-Healthy",
-      "Seed": 19267621,
-      "OriginData": {
-        "CalculationMethods": [
-          "SurfaceAreaPlsInt_VAR1",
-          "Body surface area - Mosteller"
-        ],
-        "Species": "Human",
-        "Population": "European_ICRP_2002",
-        "Gender": "MALE",
-        "Age": {
-          "Value": 42.0,
-          "Unit": "year(s)"
-        }
-      },
-      "ExpressionProfiles": [
-        "RenalCL|Human|Standard",
-        "Intestine1|Human|Standard",
-        "PMAT|Human|Standard"
-      ]
-    },
-    {
       "Name": "Sassard-Healthy",
       "Seed": 107972890,
       "OriginData": {
@@ -940,52 +925,26 @@
       ]
     },
     {
-      "Name": "WanPO",
-      "Seed": 22819576,
+      "Name": "Kirch-Healthy",
+      "Seed": 307972546,
       "OriginData": {
         "CalculationMethods": [
           "SurfaceAreaPlsInt_VAR1",
           "Body surface area - Mosteller"
         ],
         "Species": "Human",
-        "Population": "WhiteAmerican_NHANES_1997",
+        "Population": "European_ICRP_2002",
         "Gender": "MALE",
         "Age": {
-          "Value": 28.5,
+          "Value": 27.3,
           "Unit": "year(s)"
         },
         "Weight": {
-          "Value": 68.6,
-          "Unit": "kg"
-        }
-      },
-      "ExpressionProfiles": [
-        "RenalCL|Human|Standard",
-        "Intestine1|Human|Standard",
-        "PMAT|Human|Standard"
-      ]
-    },
-    {
-      "Name": "WanIV",
-      "Seed": 1228305,
-      "OriginData": {
-        "CalculationMethods": [
-          "SurfaceAreaPlsInt_VAR1",
-          "Body surface area - Mosteller"
-        ],
-        "Species": "Human",
-        "Population": "WhiteAmerican_NHANES_1997",
-        "Gender": "MALE",
-        "Age": {
-          "Value": 24.5,
-          "Unit": "year(s)"
-        },
-        "Weight": {
-          "Value": 72.9,
+          "Value": 67.9,
           "Unit": "kg"
         },
         "Height": {
-          "Value": 177.0,
+          "Value": 170.7,
           "Unit": "cm"
         }
       },
@@ -997,7 +956,7 @@
     },
     {
       "Name": "Kirch-CKD",
-      "Seed": 366626187,
+      "Seed": 417772703,
       "OriginData": {
         "CalculationMethods": [
           "SurfaceAreaPlsInt_VAR1",
@@ -1007,12 +966,16 @@
         "Population": "European_ICRP_2002",
         "Gender": "MALE",
         "Age": {
-          "Value": 42.0,
+          "Value": 52.8,
           "Unit": "year(s)"
         },
         "Weight": {
-          "Value": 74.1,
+          "Value": 55.9,
           "Unit": "kg"
+        },
+        "Height": {
+          "Value": 159.8,
+          "Unit": "cm"
         },
         "DiseaseState": "CKD",
         "DiseaseStateParameters": [
@@ -1031,7 +994,7 @@
     },
     {
       "Name": "Sassard-CKD",
-      "Seed": 367135437,
+      "Seed": 418127078,
       "OriginData": {
         "CalculationMethods": [
           "SurfaceAreaPlsInt_VAR1",
@@ -1043,6 +1006,10 @@
         "Age": {
           "Value": 40.0,
           "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 71.0,
+          "Unit": "kg"
         },
         "DiseaseState": "CKD",
         "DiseaseStateParameters": [
@@ -1062,27 +1029,29 @@
   ],
   "Populations": [
     {
-      "Name": "Kirch-CKD3",
-      "Seed": 366686968,
+      "Name": "Kirch-Healthy",
+      "Seed": 417691546,
       "Settings": {
         "NumberOfIndividuals": 100,
-        "ProportionOfFemales": 50,
+        "ProportionOfFemales": 29,
         "Age": {
-          "Min": 26.0,
-          "Max": 69.0,
+          "Min": 23.0,
+          "Max": 31.0,
           "Unit": "year(s)"
         },
-        "DiseaseStateParameters": [
-          {
-            "Name": "eGFR",
-            "Min": 30.0,
-            "Max": 60.00159,
-            "Unit": "ml/min/1.73m²"
-          }
-        ],
+        "Weight": {
+          "Min": 47.5,
+          "Max": 86.0,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Min": 150.0,
+          "Max": 189.0,
+          "Unit": "cm"
+        },
         "Individual": {
-          "Name": "Kirch CKD",
-          "Seed": 366626187,
+          "Name": "Kirch-Healthy",
+          "Seed": 307972546,
           "OriginData": {
             "CalculationMethods": [
               "SurfaceAreaPlsInt_VAR1",
@@ -1092,12 +1061,77 @@
             "Population": "European_ICRP_2002",
             "Gender": "MALE",
             "Age": {
-              "Value": 42.0,
+              "Value": 27.3,
               "Unit": "year(s)"
             },
             "Weight": {
-              "Value": 74.1,
+              "Value": 67.9,
               "Unit": "kg"
+            },
+            "Height": {
+              "Value": 170.7,
+              "Unit": "cm"
+            }
+          },
+          "ExpressionProfiles": [
+            "RenalCL|Human|Standard",
+            "Intestine1|Human|Standard",
+            "PMAT|Human|Standard"
+          ]
+        }
+      }
+    },
+    {
+      "Name": "Kirch-CKD3",
+      "Seed": 417833093,
+      "Settings": {
+        "NumberOfIndividuals": 100,
+        "ProportionOfFemales": 50,
+        "Age": {
+          "Min": 38.0,
+          "Max": 63.0,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Min": 49.0,
+          "Max": 70.0,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Min": 152.0,
+          "Max": 166.0,
+          "Unit": "cm"
+        },
+        "DiseaseStateParameters": [
+          {
+            "Name": "eGFR",
+            "Min": 37.0,
+            "Max": 60.0,
+            "Unit": "ml/min/1.73m²"
+          }
+        ],
+        "Individual": {
+          "Name": "Kirch-CKD",
+          "Seed": 417772703,
+          "OriginData": {
+            "CalculationMethods": [
+              "SurfaceAreaPlsInt_VAR1",
+              "Body surface area - Mosteller"
+            ],
+            "Species": "Human",
+            "Population": "European_ICRP_2002",
+            "Gender": "MALE",
+            "Age": {
+              "Value": 52.8,
+              "Unit": "year(s)"
+            },
+            "Weight": {
+              "Value": 55.9,
+              "Unit": "kg"
+            },
+            "Height": {
+              "Value": 159.8,
+              "Unit": "cm"
             },
             "DiseaseState": "CKD",
             "DiseaseStateParameters": [
@@ -1118,26 +1152,36 @@
     },
     {
       "Name": "Kirch-CKD4",
-      "Seed": 366734250,
+      "Seed": 417886343,
       "Settings": {
         "NumberOfIndividuals": 100,
-        "ProportionOfFemales": 50,
+        "ProportionOfFemales": 75,
         "Age": {
-          "Min": 26.0,
-          "Max": 69.0,
+          "Min": 36.0,
+          "Max": 62.0,
           "Unit": "year(s)"
+        },
+        "Weight": {
+          "Min": 49.5,
+          "Max": 66.5,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Min": 155.0,
+          "Max": 165.0,
+          "Unit": "cm"
         },
         "DiseaseStateParameters": [
           {
             "Name": "eGFR",
-            "Min": 10.0,
+            "Min": 17.0,
             "Max": 30.0,
             "Unit": "ml/min/1.73m²"
           }
         ],
         "Individual": {
-          "Name": "Kirch CKD",
-          "Seed": 366626187,
+          "Name": "Kirch-CKD",
+          "Seed": 417772703,
           "OriginData": {
             "CalculationMethods": [
               "SurfaceAreaPlsInt_VAR1",
@@ -1147,12 +1191,16 @@
             "Population": "European_ICRP_2002",
             "Gender": "MALE",
             "Age": {
-              "Value": 42.0,
+              "Value": 52.8,
               "Unit": "year(s)"
             },
             "Weight": {
-              "Value": 74.1,
+              "Value": 55.9,
               "Unit": "kg"
+            },
+            "Height": {
+              "Value": 159.8,
+              "Unit": "cm"
             },
             "DiseaseState": "CKD",
             "DiseaseStateParameters": [
@@ -1173,26 +1221,36 @@
     },
     {
       "Name": "Kirch-CKD5",
-      "Seed": 366765875,
+      "Seed": 417938546,
       "Settings": {
         "NumberOfIndividuals": 100,
-        "ProportionOfFemales": 50,
+        "ProportionOfFemales": 60,
         "Age": {
-          "Min": 26.0,
+          "Min": 61.0,
           "Max": 69.0,
           "Unit": "year(s)"
+        },
+        "Weight": {
+          "Min": 45.0,
+          "Max": 72.5,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Min": 145.0,
+          "Max": 170.0,
+          "Unit": "cm"
         },
         "DiseaseStateParameters": [
           {
             "Name": "eGFR",
-            "Min": 1.0,
-            "Max": 10.0,
+            "Min": 5.0,
+            "Max": 9.0,
             "Unit": "ml/min/1.73m²"
           }
         ],
         "Individual": {
-          "Name": "Kirch CKD",
-          "Seed": 366626187,
+          "Name": "Kirch-CKD",
+          "Seed": 417772703,
           "OriginData": {
             "CalculationMethods": [
               "SurfaceAreaPlsInt_VAR1",
@@ -1202,12 +1260,16 @@
             "Population": "European_ICRP_2002",
             "Gender": "MALE",
             "Age": {
-              "Value": 42.0,
+              "Value": 52.8,
               "Unit": "year(s)"
             },
             "Weight": {
-              "Value": 74.1,
+              "Value": 55.9,
               "Unit": "kg"
+            },
+            "Height": {
+              "Value": 159.8,
+              "Unit": "cm"
             },
             "DiseaseState": "CKD",
             "DiseaseStateParameters": [
@@ -1227,100 +1289,8 @@
       }
     },
     {
-      "Name": "WanIV-Healthy",
-      "Seed": 366909343,
-      "Settings": {
-        "NumberOfIndividuals": 100,
-        "ProportionOfFemales": 0,
-        "Age": {
-          "Min": 22.0,
-          "Max": 27.0,
-          "Unit": "year(s)"
-        },
-        "Weight": {
-          "Min": 64.5,
-          "Max": 79.9,
-          "Unit": "kg"
-        },
-        "Individual": {
-          "Name": "WanIV",
-          "Seed": 1228305,
-          "OriginData": {
-            "CalculationMethods": [
-              "SurfaceAreaPlsInt_VAR1",
-              "Body surface area - Mosteller"
-            ],
-            "Species": "Human",
-            "Population": "WhiteAmerican_NHANES_1997",
-            "Gender": "MALE",
-            "Age": {
-              "Value": 24.5,
-              "Unit": "year(s)"
-            },
-            "Weight": {
-              "Value": 72.9,
-              "Unit": "kg"
-            },
-            "Height": {
-              "Value": 177.0,
-              "Unit": "cm"
-            }
-          },
-          "ExpressionProfiles": [
-            "RenalCL|Human|Standard",
-            "Intestine1|Human|Standard",
-            "PMAT|Human|Standard"
-          ]
-        }
-      }
-    },
-    {
-      "Name": "WanPO-Healthy",
-      "Seed": 367015312,
-      "Settings": {
-        "NumberOfIndividuals": 100,
-        "ProportionOfFemales": 0,
-        "Age": {
-          "Min": 21.0,
-          "Max": 36.0,
-          "Unit": "year(s)"
-        },
-        "Weight": {
-          "Min": 64.5,
-          "Max": 87.6,
-          "Unit": "kg"
-        },
-        "Individual": {
-          "Name": "WanPO",
-          "Seed": 22819576,
-          "OriginData": {
-            "CalculationMethods": [
-              "SurfaceAreaPlsInt_VAR1",
-              "Body surface area - Mosteller"
-            ],
-            "Species": "Human",
-            "Population": "WhiteAmerican_NHANES_1997",
-            "Gender": "MALE",
-            "Age": {
-              "Value": 28.5,
-              "Unit": "year(s)"
-            },
-            "Weight": {
-              "Value": 68.6,
-              "Unit": "kg"
-            }
-          },
-          "ExpressionProfiles": [
-            "RenalCL|Human|Standard",
-            "Intestine1|Human|Standard",
-            "PMAT|Human|Standard"
-          ]
-        }
-      }
-    },
-    {
       "Name": "Sassard-Healthy",
-      "Seed": 367106125,
+      "Seed": 417996125,
       "Settings": {
         "NumberOfIndividuals": 100,
         "ProportionOfFemales": 50,
@@ -1364,7 +1334,7 @@
     },
     {
       "Name": "Sassard-CKD3",
-      "Seed": 367258062,
+      "Seed": 418192281,
       "Settings": {
         "NumberOfIndividuals": 100,
         "ProportionOfFemales": 50,
@@ -1382,13 +1352,13 @@
           {
             "Name": "eGFR",
             "Min": 46.0,
-            "Max": 60.0,
+            "Max": 60.00159,
             "Unit": "ml/min/1.73m²"
           }
         ],
         "Individual": {
           "Name": "Sassard-CKD",
-          "Seed": 367135437,
+          "Seed": 418127078,
           "OriginData": {
             "CalculationMethods": [
               "SurfaceAreaPlsInt_VAR1",
@@ -1400,6 +1370,10 @@
             "Age": {
               "Value": 40.0,
               "Unit": "year(s)"
+            },
+            "Weight": {
+              "Value": 71.0,
+              "Unit": "kg"
             },
             "DiseaseState": "CKD",
             "DiseaseStateParameters": [
@@ -1420,7 +1394,7 @@
     },
     {
       "Name": "Sassard-CKD4",
-      "Seed": 367309890,
+      "Seed": 418228281,
       "Settings": {
         "NumberOfIndividuals": 100,
         "ProportionOfFemales": 50,
@@ -1444,7 +1418,7 @@
         ],
         "Individual": {
           "Name": "Sassard-CKD",
-          "Seed": 367135437,
+          "Seed": 418127078,
           "OriginData": {
             "CalculationMethods": [
               "SurfaceAreaPlsInt_VAR1",
@@ -1457,6 +1431,10 @@
               "Value": 40.0,
               "Unit": "year(s)"
             },
+            "Weight": {
+              "Value": 71.0,
+              "Unit": "kg"
+            },
             "DiseaseState": "CKD",
             "DiseaseStateParameters": [
               {
@@ -1465,41 +1443,6 @@
                 "Unit": "ml/min/1.73m²"
               }
             ]
-          },
-          "ExpressionProfiles": [
-            "RenalCL|Human|Standard",
-            "Intestine1|Human|Standard",
-            "PMAT|Human|Standard"
-          ]
-        }
-      }
-    },
-    {
-      "Name": "Kirch-Healthy",
-      "Seed": 367417765,
-      "Settings": {
-        "NumberOfIndividuals": 100,
-        "ProportionOfFemales": 50,
-        "Age": {
-          "Min": 26.0,
-          "Max": 69.0,
-          "Unit": "year(s)"
-        },
-        "Individual": {
-          "Name": "Kirch-Healthy",
-          "Seed": 19267621,
-          "OriginData": {
-            "CalculationMethods": [
-              "SurfaceAreaPlsInt_VAR1",
-              "Body surface area - Mosteller"
-            ],
-            "Species": "Human",
-            "Population": "European_ICRP_2002",
-            "Gender": "MALE",
-            "Age": {
-              "Value": 42.0,
-              "Unit": "year(s)"
-            }
           },
           "ExpressionProfiles": [
             "RenalCL|Human|Standard",
@@ -1731,10 +1674,6 @@
   ],
   "Formulations": [
     {
-      "Name": "IV",
-      "FormulationType": "Formulation_Dissolved"
-    },
-    {
       "Name": "Tablet",
       "FormulationType": "Formulation_Tablet_Weibull",
       "Parameters": [
@@ -1766,62 +1705,6 @@
   ],
   "Protocols": [
     {
-      "Name": "50 mg IV",
-      "ApplicationType": "IntravenousBolus",
-      "DosingInterval": "Single",
-      "Parameters": [
-        {
-          "Name": "Start time",
-          "Value": 0.0,
-          "Unit": "h"
-        },
-        {
-          "Name": "InputDose",
-          "Value": 50.0,
-          "Unit": "mg"
-        }
-      ]
-    },
-    {
-      "Name": "50 mg PO",
-      "ApplicationType": "Oral",
-      "DosingInterval": "Single",
-      "Parameters": [
-        {
-          "Name": "Start time",
-          "Value": 0.0,
-          "Unit": "h"
-        },
-        {
-          "Name": "InputDose",
-          "Value": 50.0,
-          "Unit": "mg"
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        }
-      ]
-    },
-    {
-      "Name": "5 mg IV",
-      "ApplicationType": "IntravenousBolus",
-      "DosingInterval": "Single",
-      "Parameters": [
-        {
-          "Name": "Start time",
-          "Value": 0.0,
-          "Unit": "h"
-        },
-        {
-          "Name": "InputDose",
-          "Value": 5.0,
-          "Unit": "mg"
-        }
-      ]
-    },
-    {
       "Name": "100 mg PO",
       "ApplicationType": "Oral",
       "DosingInterval": "Single",
@@ -1842,218 +1725,41 @@
           "Unit": "ml/kg"
         }
       ]
+    },
+    {
+      "Name": "100 mg PO daily x7d",
+      "ApplicationType": "Oral",
+      "DosingInterval": "DI_24",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 100.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "End time",
+          "Value": 145.0,
+          "Unit": "h",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ]
     }
   ],
   "Simulations": [
     {
-      "Name": "Kirch CKD3 5 mg IV",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Kirch_CKD3"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Intestine1|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "Intestine1|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "Intestine1|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "PMAT|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "PMAT|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "PMAT|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "RenalCL|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "RenalCL|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "RenalCL|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)"
-      ],
-      "Population": "Kirch-CKD3",
-      "Compounds": [
-        {
-          "Name": "Atenolol",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - PK-Sim Standard",
-            "Cellular permeability - PK-Sim Standard"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_LIPOPHILICITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "RenalCL-RenalCL",
-              "MoleculeName": "RenalCL"
-            },
-            {
-              "Name": "Intestine1-Intestine1",
-              "MoleculeName": "Intestine1"
-            },
-            {
-              "Name": "PMAT-PMAT",
-              "MoleculeName": "PMAT"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "5 mg IV"
-          }
-        }
-      ],
-      "HasResults": true,
-      "PopulationAnalyses": [
-        {
-          "Type": "TimeProfile",
-          "Analysis": {
-            "Fields": [
-              {
-                "Name": "Atenolol-Peripheral Venous Blood-Plasma-Concentration",
-                "Dimension": "Concentration (molar)",
-                "Scaling": "Log",
-                "Unit": "µmol/l",
-                "QuantityPath": "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)",
-                "QuantityType": "Drug, Observer",
-                "Color": "#000000",
-                "Area": "DataArea"
-              }
-            ],
-            "Statistics": [
-              {
-                "Id": "GeometricMean",
-                "LineStyle": "Solid"
-              },
-              {
-                "Id": "Range90",
-                "LineStyle": "Solid"
-              }
-            ]
-          },
-          "ObservedDataCollection": {
-            "ObservedData": [
-              "Kirch_CKD3"
-            ],
-            "ApplyGrouping": false,
-            "CurveOptions": [
-              {
-                "Caption": "Kirch_CKD3-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_CKD3|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
-                "CurveOptions": {
-                  "LineStyle": "None",
-                  "Symbol": "Circle"
-                }
-              }
-            ]
-          },
-          "XAxisSettings": {
-            "AutoRange": false
-          },
-          "YAxisSettings": {
-            "AutoRange": false
-          },
-          "SecondaryYAxisSettings": [],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Atenolol\nKirch CKD3 5 mg IV\n2022-04-04 19:51"
-        }
-      ]
-    },
-    {
-      "Name": "Kirch CKD4 5 mg IV",
+      "Name": "Kirch CKD4 100 mg PO",
       "Model": "4Comp",
       "ObservedData": [
         "Kirch_CKD4"
@@ -2069,37 +1775,59 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
+              "Value": 192.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             },
             {
               "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             }
           ]
         }
       ],
       "Parameters": [
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
         {
           "Path": "Intestine1|Reference concentration",
           "Value": 1.0,
@@ -2182,7 +1910,13 @@
             }
           ],
           "Protocol": {
-            "Name": "5 mg IV"
+            "Name": "100 mg PO daily x7d",
+            "Formulations": [
+              {
+                "Name": "Tablet",
+                "Key": "Formulation"
+              }
+            ]
           }
         }
       ],
@@ -2221,8 +1955,8 @@
             "ApplyGrouping": false,
             "CurveOptions": [
               {
-                "Caption": "Kirch_CKD4-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_CKD4|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_CKD4-Atenolol-Measurement",
+                "Path": "Kirch_CKD4|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -2255,12 +1989,12 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nKirch CKD4 5 mg IV\n2022-04-04 19:52"
+          "OriginText": "Atenolol (1)\nKirch CKD4 100 mg PO\n2022-04-05 09:56"
         }
       ]
     },
     {
-      "Name": "Kirch CKD5 5 mg IV",
+      "Name": "Kirch CKD5 100 mg PO",
       "Model": "4Comp",
       "ObservedData": [
         "Kirch_CKD5"
@@ -2276,37 +2010,59 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
+              "Value": 192.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             },
             {
               "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             }
           ]
         }
       ],
       "Parameters": [
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
         {
           "Path": "Intestine1|Reference concentration",
           "Value": 1.0,
@@ -2389,7 +2145,13 @@
             }
           ],
           "Protocol": {
-            "Name": "5 mg IV"
+            "Name": "100 mg PO daily x7d",
+            "Formulations": [
+              {
+                "Name": "Tablet",
+                "Key": "Formulation"
+              }
+            ]
           }
         }
       ],
@@ -2428,8 +2190,8 @@
             "ApplyGrouping": false,
             "CurveOptions": [
               {
-                "Caption": "Kirch_CKD5-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_CKD5|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_CKD5-Atenolol-Measurement",
+                "Path": "Kirch_CKD5|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -2462,15 +2224,15 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nKirch CKD5 5 mg IV\n2022-04-04 19:53"
+          "OriginText": "Atenolol (1)\nKirch CKD5 100 mg PO\n2022-04-05 09:59"
         }
       ]
     },
     {
-      "Name": "Kirch Healthy 5 mg IV",
+      "Name": "Kirch Healthy 100 mg PO",
       "Model": "4Comp",
       "ObservedData": [
-        "Kirch_5_IV"
+        "Kirch_Healthy"
       ],
       "Solver": {},
       "OutputSchema": [
@@ -2483,26 +2245,7 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
+              "Value": 192.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -2510,13 +2253,51 @@
             },
             {
               "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             }
           ]
         }
       ],
       "Parameters": [
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
         {
           "Path": "Intestine1|Reference concentration",
           "Value": 1.0,
@@ -2599,7 +2380,13 @@
             }
           ],
           "Protocol": {
-            "Name": "5 mg IV"
+            "Name": "100 mg PO daily x7d",
+            "Formulations": [
+              {
+                "Name": "Tablet",
+                "Key": "Formulation"
+              }
+            ]
           }
         }
       ],
@@ -2633,13 +2420,13 @@
           },
           "ObservedDataCollection": {
             "ObservedData": [
-              "Kirch_5_IV"
+              "Kirch_Healthy"
             ],
             "ApplyGrouping": false,
             "CurveOptions": [
               {
-                "Caption": "Kirch_5_IV-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_5_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_Healthy-Atenolol-Measurement",
+                "Path": "Kirch_Healthy|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -2672,7 +2459,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nKirch Healthy 5 mg IV\n2022-04-04 20:09"
+          "OriginText": "Atenolol (1)\nKirch Healthy 100 mg PO\n2022-04-05 10:02"
         }
       ]
     },
@@ -2890,7 +2677,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nSassard CKD3 100 mg PO\n2022-04-04 19:54"
+          "OriginText": "Atenolol (1)\nSassard CKD3 100 mg PO\n2022-04-05 10:38"
         }
       ]
     },
@@ -3111,7 +2898,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nSassard CKD4 100 mg PO\n2022-04-04 19:55"
+          "OriginText": "Atenolol (1)\nSassard CKD4 100 mg PO\n2022-04-05 10:40"
         }
       ]
     },
@@ -3119,7 +2906,7 @@
       "Name": "Sassard Healthy 100 mg PO",
       "Model": "4Comp",
       "ObservedData": [
-        "Sassard_100_PO"
+        "Sassard_Healthy"
       ],
       "Solver": {},
       "OutputSchema": [
@@ -3290,13 +3077,13 @@
           },
           "ObservedDataCollection": {
             "ObservedData": [
-              "Sassard_100_PO"
+              "Sassard_Healthy"
             ],
             "ApplyGrouping": false,
             "CurveOptions": [
               {
-                "Caption": "Sassard_100_PO-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Sassard_100_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Sassard_Healthy-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
+                "Path": "Sassard_Healthy|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
                 "CurveOptions": {
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -3329,15 +3116,15 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nSassard Healthy 100 mg PO\n2022-04-04 19:55"
+          "OriginText": "Atenolol (1)\nSassard Healthy 100 mg PO\n2022-04-05 10:43"
         }
       ]
     },
     {
-      "Name": "Wan Healthy 100 mg PO",
+      "Name": "Kirch CKD3 100 mg PO",
       "Model": "4Comp",
       "ObservedData": [
-        "Wan_100_PO"
+        "Kirch_CKD3"
       ],
       "Solver": {},
       "OutputSchema": [
@@ -3350,39 +3137,56 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
+              "Value": 192.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             },
             {
               "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
             }
           ]
         }
       ],
       "Parameters": [
         {
-          "Path": "Applications|100 mg PO|Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|100 mg PO daily x7d|Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -3435,7 +3239,7 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)"
       ],
-      "Population": "WanPO-Healthy",
+      "Population": "Kirch-CKD3",
       "Compounds": [
         {
           "Name": "Atenolol",
@@ -3468,7 +3272,7 @@
             }
           ],
           "Protocol": {
-            "Name": "100 mg PO",
+            "Name": "100 mg PO daily x7d",
             "Formulations": [
               {
                 "Name": "Tablet",
@@ -3497,24 +3301,24 @@
             ],
             "Statistics": [
               {
-                "Id": "ArithmeticMean",
+                "Id": "GeometricMean",
                 "LineStyle": "Solid"
               },
               {
-                "Id": "ArithmeticStandardDeviation",
+                "Id": "Range90",
                 "LineStyle": "Solid"
               }
             ]
           },
           "ObservedDataCollection": {
             "ObservedData": [
-              "Wan_100_PO"
+              "Kirch_CKD3"
             ],
             "ApplyGrouping": false,
             "CurveOptions": [
               {
-                "Caption": "Wan_100_PO-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Wan_100_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_CKD3-Atenolol-Measurement",
+                "Path": "Kirch_CKD3|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -3547,1342 +3351,14 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nWan Healthy 100 mg PO\n2022-04-04 19:56"
-        }
-      ]
-    },
-    {
-      "Name": "Wan Healthy 50 mg IV",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Wan_50_IV"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Intestine1|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "Intestine1|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "Intestine1|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "PMAT|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "PMAT|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "PMAT|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "RenalCL|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "RenalCL|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "RenalCL|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)"
-      ],
-      "Population": "WanIV-Healthy",
-      "Compounds": [
-        {
-          "Name": "Atenolol",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - PK-Sim Standard",
-            "Cellular permeability - PK-Sim Standard"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_LIPOPHILICITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "RenalCL-RenalCL",
-              "MoleculeName": "RenalCL"
-            },
-            {
-              "Name": "Intestine1-Intestine1",
-              "MoleculeName": "Intestine1"
-            },
-            {
-              "Name": "PMAT-PMAT",
-              "MoleculeName": "PMAT"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "50 mg IV"
-          }
-        }
-      ],
-      "HasResults": true,
-      "PopulationAnalyses": [
-        {
-          "Type": "TimeProfile",
-          "Analysis": {
-            "Fields": [
-              {
-                "Name": "Atenolol-Peripheral Venous Blood-Plasma-Concentration",
-                "Dimension": "Concentration (molar)",
-                "Scaling": "Log",
-                "Unit": "µmol/l",
-                "QuantityPath": "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)",
-                "QuantityType": "Drug, Observer",
-                "Color": "#000000",
-                "Area": "DataArea"
-              }
-            ],
-            "Statistics": [
-              {
-                "Id": "ArithmeticMean",
-                "LineStyle": "Solid"
-              },
-              {
-                "Id": "ArithmeticStandardDeviation",
-                "LineStyle": "Solid"
-              }
-            ]
-          },
-          "ObservedDataCollection": {
-            "ObservedData": [
-              "Wan_50_IV"
-            ],
-            "ApplyGrouping": false,
-            "CurveOptions": [
-              {
-                "Caption": "Wan_50_IV-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Wan_50_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
-                "CurveOptions": {
-                  "LineStyle": "None",
-                  "Symbol": "Circle"
-                }
-              }
-            ]
-          },
-          "XAxisSettings": {
-            "AutoRange": false
-          },
-          "YAxisSettings": {
-            "AutoRange": false
-          },
-          "SecondaryYAxisSettings": [],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Atenolol\nWan Healthy 50 mg IV\n2022-04-04 19:57"
-        }
-      ]
-    },
-    {
-      "Name": "Wan Healthy 50 mg PO",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Wan_50_PO"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|50 mg PO|Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Intestine1|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "Intestine1|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "Intestine1|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "PMAT|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "PMAT|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "PMAT|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "RenalCL|Reference concentration",
-          "Value": 1.0,
-          "Unit": "µmol/l"
-        },
-        {
-          "Path": "RenalCL|t1/2 (intestine)",
-          "Value": 23.0,
-          "Unit": "h"
-        },
-        {
-          "Path": "RenalCL|t1/2 (liver)",
-          "Value": 36.0,
-          "Unit": "h"
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)"
-      ],
-      "Population": "WanPO-Healthy",
-      "Compounds": [
-        {
-          "Name": "Atenolol",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - PK-Sim Standard",
-            "Cellular permeability - PK-Sim Standard"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_LIPOPHILICITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "RenalCL-RenalCL",
-              "MoleculeName": "RenalCL"
-            },
-            {
-              "Name": "Intestine1-Intestine1",
-              "MoleculeName": "Intestine1"
-            },
-            {
-              "Name": "PMAT-PMAT",
-              "MoleculeName": "PMAT"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "50 mg PO",
-            "Formulations": [
-              {
-                "Name": "Tablet",
-                "Key": "Formulation"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "PopulationAnalyses": [
-        {
-          "Type": "TimeProfile",
-          "Analysis": {
-            "Fields": [
-              {
-                "Name": "Atenolol-Peripheral Venous Blood-Plasma-Concentration",
-                "Dimension": "Concentration (molar)",
-                "Scaling": "Log",
-                "Unit": "µmol/l",
-                "QuantityPath": "Organism|PeripheralVenousBlood|Atenolol|Plasma (Peripheral Venous Blood)",
-                "QuantityType": "Drug, Observer",
-                "Color": "#000000",
-                "Area": "DataArea"
-              }
-            ],
-            "Statistics": [
-              {
-                "Id": "ArithmeticMean",
-                "LineStyle": "Solid"
-              },
-              {
-                "Id": "ArithmeticStandardDeviation",
-                "LineStyle": "Solid"
-              }
-            ]
-          },
-          "ObservedDataCollection": {
-            "ObservedData": [
-              "Wan_50_PO"
-            ],
-            "ApplyGrouping": false,
-            "CurveOptions": [
-              {
-                "Caption": "Wan_50_PO-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Wan_50_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
-                "CurveOptions": {
-                  "LineStyle": "None",
-                  "Symbol": "Circle"
-                }
-              }
-            ]
-          },
-          "XAxisSettings": {
-            "AutoRange": false
-          },
-          "YAxisSettings": {
-            "AutoRange": false
-          },
-          "SecondaryYAxisSettings": [],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Atenolol\nWan Healthy 50 mg PO\n2022-04-04 19:57"
+          "OriginText": "Atenolol (1)\nKirch CKD3 100 mg PO\n2022-04-05 11:11"
         }
       ]
     }
   ],
   "ObservedData": [
     {
-      "Name": "Wan_50_IV",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "WAN79A_50_IV"
-        },
-        {
-          "Name": "Dose",
-          "Value": "50"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Wan_50_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.1.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                0.2498941,
-                0.2084991,
-                0.1246362,
-                0.100573204,
-                0.0852891,
-                0.06050515,
-                0.0463293,
-                0.04150829,
-                0.03083898,
-                0.0149061205,
-                0.011823222,
-                0.009358779
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Wan_50_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.1.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            2.616822,
-            1.72666192,
-            1.23063982,
-            0.8754971,
-            0.7179163,
-            0.575442851,
-            0.360095,
-            0.287049741,
-            0.157418489,
-            0.0939096138,
-            0.0623496063,
-            0.036229495
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Wan_50_IV|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.1.Time [h]"
-        },
-        "Values": [
-          0.25,
-          0.5,
-          1.0,
-          2.0,
-          3.0,
-          4.0,
-          6.0,
-          8.0,
-          12.0,
-          16.0,
-          20.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Wan_50_PO",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "WAN79D_50_PO"
-        },
-        {
-          "Name": "Dose",
-          "Value": "50"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Wan_50_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.4.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                0.404907018,
-                0.481168181,
-                0.5126456,
-                0.3562797,
-                0.3277844,
-                0.230913758,
-                0.208085611,
-                0.1934444,
-                0.1967977,
-                0.109576218,
-                0.0600811355,
-                0.0830211937,
-                0.0757248849
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Wan_50_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.4.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            0.10088785,
-            0.218625516,
-            0.3393743,
-            0.283863783,
-            0.2511751,
-            0.1864297,
-            0.161508515,
-            0.115808152,
-            0.100034095,
-            0.07695038,
-            0.048506882,
-            0.0333848745,
-            0.0180297773
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Wan_50_PO|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.4.Time [h]"
-        },
-        "Values": [
-          0.5,
-          1.0,
-          2.0,
-          3.0,
-          4.0,
-          5.0,
-          6.0,
-          8.0,
-          10.0,
-          12.0,
-          16.0,
-          20.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Wan_100_PO",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "WAN79E_100_PO"
-        },
-        {
-          "Name": "Dose",
-          "Value": "100"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Wan_100_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.5.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                0.3673766,
-                0.710355461,
-                0.7010835,
-                0.5216975,
-                0.61666,
-                0.619628251,
-                0.380453974,
-                0.351149,
-                0.2273129,
-                0.132075176,
-                0.145369276,
-                0.127787948,
-                0.11204581
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Wan_100_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.5.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            0.111687638,
-            0.347536027,
-            0.5171526,
-            0.4639824,
-            0.3772848,
-            0.3481415,
-            0.270451963,
-            0.235194147,
-            0.1697835,
-            0.11916513,
-            0.08610088,
-            0.05182049,
-            0.0366609879
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Wan_100_PO|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.5.Time [h]"
-        },
-        "Values": [
-          0.5,
-          1.0,
-          2.0,
-          3.0,
-          4.0,
-          5.0,
-          6.0,
-          8.0,
-          10.0,
-          12.0,
-          16.0,
-          20.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Kirch_5_IV",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "KIRCH80A_5_IV"
-        },
-        {
-          "Name": "Dose",
-          "Value": "5"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Kirch_5_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.9.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN"
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Kirch_5_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.9.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            0.130841151,
-            0.06957623,
-            0.0516401529,
-            0.0434438623,
-            0.0319450833,
-            0.0216755085,
-            0.0109019056,
-            0.00236694166
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Kirch_5_IV|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.9.Time [h]"
-        },
-        "Values": [
-          0.25,
-          1.0,
-          2.0,
-          3.0,
-          4.0,
-          6.0,
-          12.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Kirch_CKD5",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "KIRCH80B_5_IV"
-        },
-        {
-          "Name": "Dose",
-          "Value": "5"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Kirch_CKD5|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.10.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN"
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Kirch_CKD5|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.10.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            0.235350892,
-            0.132921383,
-            0.0982057,
-            0.09709984,
-            0.0921032056,
-            0.09211803,
-            0.07730314,
-            0.06709104,
-            0.06545334
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Kirch_CKD5|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.10.Time [h]"
-        },
-        "Values": [
-          0.25,
-          0.5,
-          1.0,
-          2.0,
-          3.0,
-          4.0,
-          6.0,
-          12.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Kirch_CKD4",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "KIRCH80C_5_IV"
-        },
-        {
-          "Name": "Dose",
-          "Value": "5"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Kirch_CKD4|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.13.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN"
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Kirch_CKD4|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.13.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            0.161194235,
-            0.122738652,
-            0.07794396,
-            0.0637649745,
-            0.044387266,
-            0.03322533,
-            0.01793874
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Kirch_CKD4|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.13.Time [h]"
-        },
-        "Values": [
-          0.5,
-          1.0,
-          2.0,
-          3.0,
-          6.0,
-          12.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Kirch_CKD3",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Users\\Arvind\\Documents\\Urooj's 401\\Data-collection.xlsx.Normal data"
-        },
-        {
-          "Name": "File",
-          "Value": "Data-collection"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Normal data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Atenolol"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        },
-        {
-          "Name": "Study Id",
-          "Value": "KIRCH80D_5_IV"
-        },
-        {
-          "Name": "Dose",
-          "Value": "5"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Concentration ",
-          "RelatedColumns": [
-            {
-              "Name": "std. deviation",
-              "QuantityInfo": {
-                "Name": "std. deviation",
-                "Path": "Kirch_CKD3|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|std. deviation"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "Date": "2019-10-30T00:33:57.4716709-04:00",
-                "Source": "Data-collection.Normal data.14.std. deviation",
-                "MolWeight": 266.3
-              },
-              "Values": [
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN",
-                "NaN"
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Name": "Concentration ",
-            "Path": "Kirch_CKD3|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2019-10-30T00:33:57.4716709-04:00",
-            "Source": "Data-collection.Normal data.14.Concentration [ug/mL]",
-            "MolWeight": 266.3
-          },
-          "Values": [
-            0.10882733,
-            0.07847221,
-            0.06242393,
-            0.05550027,
-            0.0488903373,
-            0.0342599079,
-            0.0276144873,
-            0.013528347
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time ",
-        "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Kirch_CKD3|Time ",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "2019-10-30T00:33:57.4716709-04:00",
-          "Source": "Data-collection.Normal data.14.Time [h]"
-        },
-        "Values": [
-          0.5,
-          1.0,
-          2.0,
-          3.0,
-          4.0,
-          6.0,
-          12.0,
-          24.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Sassard_100_PO",
+      "Name": "Sassard_Healthy",
       "ExtendedProperties": [
         {
           "Name": "Source",
@@ -4926,7 +3402,7 @@
           "Name": "Concentration ",
           "QuantityInfo": {
             "Name": "Concentration ",
-            "Path": "Sassard_100_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
+            "Path": "Sassard_Healthy|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration "
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -4951,7 +3427,7 @@
         "Name": "Time ",
         "QuantityInfo": {
           "Name": "Time ",
-          "Path": "Sassard_100_PO|Time ",
+          "Path": "Sassard_Healthy|Time ",
           "Type": "Time"
         },
         "DataInfo": {
@@ -5153,16 +3629,346 @@
         "Dimension": "Time",
         "Unit": "h"
       }
+    },
+    {
+      "Name": "Kirch_Healthy",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kirch81_100_POA"
+        },
+        {
+          "Name": "Dose",
+          "Value": "100"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Atenolol"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Name": "Measurement",
+            "Path": "Kirch_Healthy|ObservedData|||Atenolol|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2022-04-04T22:34:47.7966518-04:00",
+            "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx",
+            "MolWeight": 266.3
+          },
+          "Values": [
+            0.180193752,
+            0.448198378,
+            0.497704834,
+            0.428465128,
+            0.364395469,
+            0.307347119,
+            0.201525658,
+            0.0664950162,
+            0.03855649,
+            0.0151981646
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Name": "Time",
+          "Path": "Kirch_Healthy|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2022-04-04T22:34:47.7966518-04:00",
+          "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        "Values": [
+          144.5,
+          145.0,
+          146.0,
+          147.0,
+          148.0,
+          150.0,
+          156.0,
+          168.0,
+          180.0,
+          192.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kirch_CKD3",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kirch81_100_POB"
+        },
+        {
+          "Name": "Dose",
+          "Value": "100"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Atenolol"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Name": "Measurement",
+            "Path": "Kirch_CKD3|ObservedData|||Atenolol|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2022-04-04T22:34:47.7977226-04:00",
+            "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx",
+            "MolWeight": 266.3
+          },
+          "Values": [
+            0.27600202,
+            0.5654437,
+            0.834889531,
+            0.9067414,
+            0.85143286,
+            0.7492582,
+            0.39099285,
+            0.194436312,
+            0.08652467,
+            0.0519219041
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Name": "Time",
+          "Path": "Kirch_CKD3|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2022-04-04T22:34:47.7977226-04:00",
+          "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        "Values": [
+          144.5,
+          145.0,
+          146.0,
+          147.0,
+          148.0,
+          150.0,
+          156.0,
+          168.0,
+          180.0,
+          192.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kirch_CKD4",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kirch81_100_POC"
+        },
+        {
+          "Name": "Dose",
+          "Value": "100"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Atenolol"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Name": "Measurement",
+            "Path": "Kirch_CKD4|ObservedData|||Atenolol|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2022-04-04T22:34:47.7977226-04:00",
+            "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx",
+            "MolWeight": 266.3
+          },
+          "Values": [
+            0.7504366,
+            0.8784045,
+            1.225626,
+            1.09863412,
+            0.9587469,
+            0.712542355,
+            0.4533977,
+            0.320473522,
+            0.220647275
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Name": "Time",
+          "Path": "Kirch_CKD4|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2022-04-04T22:34:47.7977226-04:00",
+          "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        "Values": [
+          144.5,
+          145.0,
+          146.0,
+          147.0,
+          150.0,
+          156.0,
+          168.0,
+          180.0,
+          192.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kirch_CKD5",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Sheet1"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Kirch81_100_POD"
+        },
+        {
+          "Name": "Dose",
+          "Value": "100"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Atenolol"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "QuantityInfo": {
+            "Name": "Measurement",
+            "Path": "Kirch_CKD5|ObservedData|||Atenolol|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "2022-04-04T22:34:47.7977226-04:00",
+            "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx",
+            "MolWeight": 266.3
+          },
+          "Values": [
+            1.0431639,
+            1.18701255,
+            1.36146462,
+            1.32845616,
+            1.3884486,
+            1.25938356,
+            1.1386807,
+            1.03612876,
+            0.781258047,
+            0.5455592
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Name": "Time",
+          "Path": "Kirch_CKD5|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "2022-04-04T22:34:47.7977226-04:00",
+          "Source": "C:\\Users\\MALIKPR\\OneDrive - AbbVie Inc (O365)\\Documents\\CKD Qual Plan\\Atenololdata.xlsx"
+        },
+        "Values": [
+          144.5,
+          145.0,
+          146.0,
+          147.0,
+          148.0,
+          150.0,
+          156.0,
+          168.0,
+          180.0,
+          192.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
     }
   ],
   "SimulationComparisons": [
     {
       "Name": "Kirch Comparison",
       "Simulations": [
-        "Kirch CKD3 5 mg IV",
-        "Kirch CKD4 5 mg IV",
-        "Kirch CKD5 5 mg IV",
-        "Kirch Healthy 5 mg IV"
+        "Kirch CKD3 100 mg PO",
+        "Kirch CKD4 100 mg PO",
+        "Kirch CKD5 100 mg PO",
+        "Kirch Healthy 100 mg PO"
       ],
       "PopulationComparisons": [
         {
@@ -5174,22 +3980,22 @@
                 "Covariate": "Simulation Name",
                 "GroupingItems": [
                   {
-                    "Label": "Kirch CKD3 5 mg IV",
+                    "Label": "Kirch CKD3 100 mg PO",
                     "Color": "#000000",
                     "Symbol": "Triangle"
                   },
                   {
-                    "Label": "Kirch CKD4 5 mg IV",
+                    "Label": "Kirch CKD4 100 mg PO",
                     "Color": "#FF0000",
                     "Symbol": "Triangle"
                   },
                   {
-                    "Label": "Kirch CKD5 5 mg IV",
+                    "Label": "Kirch CKD5 100 mg PO",
                     "Color": "#0000FF",
                     "Symbol": "Triangle"
                   },
                   {
-                    "Label": "Kirch Healthy 5 mg IV",
+                    "Label": "Kirch Healthy 100 mg PO",
                     "Color": "#008000",
                     "Symbol": "Triangle"
                   }
@@ -5219,21 +4025,21 @@
               "Kirch_CKD3",
               "Kirch_CKD4",
               "Kirch_CKD5",
-              "Kirch_5_IV"
+              "Kirch_Healthy"
             ],
             "ApplyGrouping": false,
             "CurveOptions": [
               {
-                "Caption": "Kirch_CKD3-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_CKD3|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_CKD3-Atenolol-Measurement",
+                "Path": "Kirch_CKD3|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "LineStyle": "None",
                   "Symbol": "Circle"
                 }
               },
               {
-                "Caption": "Kirch_CKD4-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_CKD4|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_CKD4-Atenolol-Measurement",
+                "Path": "Kirch_CKD4|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "Color": "#FF0000",
                   "LineStyle": "None",
@@ -5241,8 +4047,8 @@
                 }
               },
               {
-                "Caption": "Kirch_CKD5-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_CKD5|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_CKD5-Atenolol-Measurement",
+                "Path": "Kirch_CKD5|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "Color": "#0000FF",
                   "LineStyle": "None",
@@ -5250,8 +4056,8 @@
                 }
               },
               {
-                "Caption": "Kirch_5_IV-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Kirch_5_IV|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Kirch_Healthy-Atenolol-Measurement",
+                "Path": "Kirch_Healthy|ObservedData|||Atenolol|Measurement",
                 "CurveOptions": {
                   "Color": "#008000",
                   "LineStyle": "None",
@@ -5281,11 +4087,11 @@
           },
           "Settings": {
             "SideMarginsEnabled": true,
-            "LegendPosition": "RightInside",
+            "LegendPosition": "BottomInside",
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nSimulation Comparison 1\n2022-04-04 20:04"
+          "OriginText": "Atenolol (1)\nSimulation Comparison 2\n2022-04-05 11:14"
         }
       ],
       "ReferenceGroupingItem": {
@@ -5350,7 +4156,7 @@
             "ObservedData": [
               "Sassard_CKD3",
               "Sassard_CKD4",
-              "Sassard_100_PO"
+              "Sassard_Healthy"
             ],
             "ApplyGrouping": false,
             "CurveOptions": [
@@ -5372,8 +4178,8 @@
                 }
               },
               {
-                "Caption": "Sassard_100_PO-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
-                "Path": "Sassard_100_PO|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
+                "Caption": "Sassard_Healthy-Atenolol-Peripheral Venous Blood-Plasma-Concentration ",
+                "Path": "Sassard_Healthy|ObservedData|Peripheral Venous Blood|Plasma|Atenolol|Concentration ",
                 "CurveOptions": {
                   "Color": "#0000FF",
                   "LineStyle": "None",
@@ -5383,7 +4189,9 @@
             ]
           },
           "XAxisSettings": {
-            "AutoRange": true
+            "Min": -1.5466666667,
+            "Max": 25.2289649778,
+            "AutoRange": false
           },
           "YAxisSettings": {
             "AutoRange": true
@@ -5407,7 +4215,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Atenolol\nSimulation Comparison 1\n2022-04-04 20:07"
+          "OriginText": "Atenolol (1)\nSimulation Comparison 1\n2022-04-05 11:16"
         }
       ],
       "ReferenceGroupingItem": {
@@ -5421,21 +4229,18 @@
     {
       "Name": "Healthy",
       "Classifiables": [
-        "Wan_50_IV",
-        "Wan_50_PO",
-        "Wan_100_PO",
-        "Kirch_5_IV",
-        "Sassard_100_PO"
+        "Sassard_Healthy",
+        "Kirch_Healthy"
       ]
     },
     {
       "Name": "CKD",
       "Classifiables": [
-        "Kirch_CKD5",
-        "Kirch_CKD4",
-        "Kirch_CKD3",
         "Sassard_CKD3",
-        "Sassard_CKD4"
+        "Sassard_CKD4",
+        "Kirch_CKD3",
+        "Kirch_CKD4",
+        "Kirch_CKD5"
       ]
     }
   ]

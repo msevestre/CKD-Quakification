@@ -448,7 +448,9 @@
               "Unit": "year(s)"
             }
           },
-          "ExpressionProfiles": []
+          "ExpressionProfiles": [
+            "SLC7A5|Human|Blum"
+          ]
         }
       }
     },
@@ -495,7 +497,9 @@
               }
             ]
           },
-          "ExpressionProfiles": []
+          "ExpressionProfiles": [
+            "SLC7A5|Human|Blum"
+          ]
         }
       }
     },
@@ -542,7 +546,9 @@
               }
             ]
           },
-          "ExpressionProfiles": []
+          "ExpressionProfiles": [
+            "SLC7A5|Human|Blum"
+          ]
         }
       }
     }
