@@ -2,20 +2,20 @@
     "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.0/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
-            "Id":  "Gabapentin rough",
+            "Id":  "Gabapentin",
             "Path":  "Models/Gabapentin.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         },
         {
-            "Id":  "Acebutolol rough",
+            "Id":  "Acebutolol",
             "Path":  "Models/Acebutolol.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         },
         {
-            "Id":  "Atenolol rough",
-            "Path":  "Models/Atenolol_mod.json",
+            "Id":  "Atenolol",
+            "Path":  "Models/Atenolol.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }      
@@ -26,63 +26,78 @@
         "PlotSettings": {},
         "AllPlots": [
             {
-                "Project": "Gabapentin rough",
+                "Project": "Gabapentin",
                 "Simulation": "Blum Healthy 400 mg PO",
                 "SectionId": 311
             },
             {
-                "Project": "Gabapentin rough",
+                "Project": "Gabapentin",
                 "Simulation": "Blum CKD3 400 mg PO",
                 "SectionId": 312
             },
             {
-                "Project": "Gabapentin rough",
+                "Project": "Gabapentin",
                 "Simulation": "Blum CKD5 400 mg PO",
                 "SectionId": 312
             },
             {
-                "Project": "Acebutolol rough",
+                "Project": "Acebutolol",
                 "Simulation": "Roux Healthy 200 mg PO",
                 "SectionId": 321
             },
             {
-                "Project": "Acebutolol rough",
+                "Project": "Acebutolol",
                 "Simulation": "Roux CKD 200 mg PO",
                 "SectionId": 322
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Wan Population 50mg PO",
+                "Project": "Atenolol",
+                "Simulation": "Wan Healthy 50 mg IV",
                 "SectionId": 331
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Wan Population 100mg PO",
+                "Project": "Atenolol",
+                "Simulation": "Wan Healthy 50 mg PO",
                 "SectionId": 331
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Kirch 1980 Stage 3 Pop",
+                "Project": "Atenolol",
+                "Simulation": "Wan Healthy 100 mg PO",
+                "SectionId": 331
+            },
+            {
+                "Project": "Atenolol",
+                "Simulation": "Kirch Healthy 5 mg IV",
+                "SectionId": 331
+            },
+            {
+                "Project": "Atenolol",
+                "Simulation": "Kirch CKD3 5 mg IV",
                 "SectionId": 332
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Kirch 1980 Stage 4 Pop",
+                "Project": "Atenolol",
+                "Simulation": "Kirch CKD4 5 mg IV",
                 "SectionId": 332
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Kirch 1980 Stage 5 Pop",
+                "Project": "Atenolol",
+                "Simulation": "Kirch CKD5 5 mg IV",
                 "SectionId": 332
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Sassard Stage 3 Pop 100mg PO",
+                "Project": "Atenolol",
+                "Simulation": "Sassard Healthy 100 mg PO",
+                "SectionId": 331
+            },
+            {
+                "Project": "Atenolol",
+                "Simulation": "Sassard CKD3 100 mg PO",
                 "SectionId": 332
             },
             {
-                "Project": "Atenolol rough",
-                "Simulation": "Sassard Stage 4 Pop 100mg PO",
+                "Project": "Atenolol",
+                "Simulation": "Sassard CKD4 100 mg PO",
                 "SectionId": 332
             }         
         ],
@@ -162,8 +177,8 @@
             ]
         },
         {
-            "Id": 5,
-            "Title": "5 References",
+            "Id": 4,
+            "Title": "4 References",
             "Content": "Content/References.md"
         }
     ],
