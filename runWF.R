@@ -19,4 +19,3 @@ workflow$inactivateTasks("plotComparisonTimeProfile")
 tictoc::tic()
 workflow$runWorkflow()
 tictoc::toc()
-
