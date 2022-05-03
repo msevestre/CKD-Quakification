@@ -551,56 +551,15 @@
                "Unit": "h"
             },
             {
-          "Path": "Organism|Bone|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Fat|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Gonads|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Heart|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|LargeIntestine|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
                "Path": "Organism|LargeIntestine|Mucosa|Caecum|Intracellular|Intestine1|Relative expression",
                "Value": 1.0
             },
             {
-          "Path": "Organism|Lung|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Muscle|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Pancreas|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Skin|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|SmallIntestine|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-        },
-        {
-          "Path": "Organism|Spleen|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
-            },
-            {
-          "Path": "Organism|Stomach|Interstitial|Intestine1|Fraction expressed basolateral",
-          "Value": 1.0
+               "Path": "Organism|LargeIntestine|Mucosa|Caecum|Intracellular|Intestine1|Fraction expressed apical",
+               "Value": 0.0,
+               "ValueOrigin": {
+                 "Source": "Unknown"
+               }
             }
          ],
          "TransportType": "Efflux",
