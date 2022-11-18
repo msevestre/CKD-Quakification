@@ -98,7 +98,7 @@
          "Content": "Content/Section1_Introduction.md"
       },
       {
-         "Title": "CKP Population Development",
+         "Title": "CKD Population Development",
          "Content": "Content/Section2_Model.md"
       },
       {
@@ -157,8 +157,12 @@
          ]
       },
       {
+         "Title": "Conclusion",
+         "Content": "Content/Section4_Conclusion.md"
+      },
+      {
          "Title": "References",
-         "Content": "Content/References.md"
+         "Content": "Content/Section5_References.md"
       }
    ]
 }

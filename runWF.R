@@ -14,7 +14,7 @@ workflow <- loadQualificationWorkflow(
 #' Remove watermark
 workflow$setWatermark("")
 
-workflow$activateTasks("simulate")
+workflow$inactivateTasks("simulate")
 workflow$activateTasks("plotTimeProfiles")
 workflow$inactivateTasks("calculatePKParameters")
 workflow$inactivateTasks("plotDDIRatio")
