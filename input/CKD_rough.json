@@ -157,8 +157,12 @@
          ]
       },
       {
+         "Title": "Conclusion",
+         "Content": "Content/Section4_Conclusion.md"
+      },
+      {
          "Title": "References",
-         "Content": "Content/References.md"
+         "Content": "Content/Section5_References.md"
       }
    ]
 }
