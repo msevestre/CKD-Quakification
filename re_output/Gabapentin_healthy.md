@@ -47,4 +47,4 @@ LAT1 was added as an influx transporter and its relative expression throughout t
 
 <sup>c</sup>Approximated based on the reported range of BMI, 18.03 – 24.99 kg/m<sup>2</sup>.
 
-**Figure 3.1.1** demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>34</sup>
+**Figure 3.1.3** demonstrates the simulated oral model PK profiles in a healthy population compared against observed Blum 1994 study data.<sup>34</sup>
